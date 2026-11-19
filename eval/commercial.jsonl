@@ -1,0 +1,2 @@
+{"input": "client: Fromagerie Vidal, Annecy. besoin: 6 palettes/semaine vers Lyon, froid. prix: pas encore validé. démarrage souhaité janvier.", "must_include": ["[À COMPLÉTER]", "Transports Delorme"], "must_not_include": ["04 57", "06 "]}
+{"input": "client: Garage Morel, Bron. besoin: enlèvement de 2 palettes de pneus vendredi. prix convenu: 140 euros HT.", "must_include": ["140"]}

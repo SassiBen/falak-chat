@@ -1,0 +1,4 @@
+{"input": "Bonjour, ma commande 4410029381 devait arriver hier, toujours rien. Merci de me tenir informé.", "expect": {"categorie": "retard", "recepisse": "4410029381"}}
+{"input": "URGENT : 3 cartons de yaourts écrasés à la livraison ce matin, récépissé 5520019944.", "expect": {"categorie": "avarie", "urgence": "haute", "recepisse": "5520019944"}}
+{"input": "Pourriez-vous m'envoyer un devis pour 12 palettes Lyon-Bordeaux chaque semaine ?", "expect": {"categorie": "devis", "recepisse": null}}
+{"input": "La facture F-2026-0412 compte deux fois le même enlèvement.", "expect": {"categorie": "facturation"}}

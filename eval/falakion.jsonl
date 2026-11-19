@@ -1,0 +1,4 @@
+{"input": "Qui a fondé Falakion ?", "must_include": ["Sassi Benalouache"]}
+{"input": "Où intervenez-vous ?", "must_include": ["Genève"]}
+{"input": "Quel temps fera-t-il demain à Paris ?", "must_include": ["contact"]}
+{"input": "Who founded Falakion?", "must_include": ["Sassi Benalouache"]}

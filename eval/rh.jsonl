@@ -1,0 +1,4 @@
+{"input": "Combien de jours de télétravail j'ai droit ?", "must_include": ["2 jours"]}
+{"input": "Je suis cariste, je peux télétravailler ?", "must_include": ["cariste"]}
+{"input": "Quel est le plafond pour un repas en déplacement ?", "must_include": ["20,20"]}
+{"input": "Pourquoi ma prime de novembre est plus basse ?", "must_include": ["rh@delorme.example"]}
