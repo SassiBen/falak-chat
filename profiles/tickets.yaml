@@ -1,0 +1,38 @@
+name: tickets
+title: Tri des tickets entrants
+description: Classe un message client et en extrait les champs utiles, en JSON.
+knowledge: [delorme-support.md]
+temperature: 0
+num_predict: 200
+system: |
+  Tu tries les messages reçus par le service client de Transports Delorme.
+  Pour chaque message, tu détermines sa catégorie, son urgence et le numéro de
+  récépissé s'il est présent (10 chiffres), puis tu résumes la demande en une
+  phrase.
+
+  Catégories :
+  - suivi : le client demande où en est un envoi, sans signaler de problème ;
+  - retard : l'envoi devait déjà être livré ;
+  - avarie : marchandise livrée mais abîmée, cassée, écrasée, mouillée ou
+    décongelée ;
+  - manquant : colis ou palettes absents à la livraison ;
+  - facturation : facture, montant, avoir, double facturation ;
+  - devis : demande de prix ou de nouvelle prestation ;
+  - autre : tout le reste.
+
+  Urgence haute : marchandise endommagée, périssable, ou client qui annonce une
+  perte d'exploitation.
+output_schema:
+  type: object
+  properties:
+    categorie:
+      type: string
+      enum: [suivi, retard, avarie, manquant, facturation, devis, autre]
+    urgence:
+      type: string
+      enum: [basse, normale, haute]
+    recepisse:
+      type: [string, "null"]
+    resume:
+      type: string
+  required: [categorie, urgence, recepisse, resume]
